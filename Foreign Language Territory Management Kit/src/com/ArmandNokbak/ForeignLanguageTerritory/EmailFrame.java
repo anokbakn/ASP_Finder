@@ -148,7 +148,7 @@ public class EmailFrame extends javax.swing.JFrame {
         Session session = Session.getDefaultInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication("ardeondia@gmail.com", "Johndoe57");
+                        return new PasswordAuthentication("your@email", "pwd");
                     }
                 }
         );
@@ -158,7 +158,7 @@ public class EmailFrame extends javax.swing.JFrame {
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(ForeignLanguageTerritoryManagementKit.user.getEmail(), ForeignLanguageTerritoryManagementKit.user.getUserName()
                     + " from " + ForeignLanguageTerritoryManagementKit.user.getCongregation()));
-            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("ardeondia@gmail.com"));
+            message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("email@gmail.com"));
             message.setSubject(subject);
             message.setText(ForeignLanguageTerritoryManagementKit.user.getUserName()
                     + " from " + ForeignLanguageTerritoryManagementKit.user.getCongregation()
