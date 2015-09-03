@@ -146,7 +146,7 @@ public class ForeignLanguageTerritoryManagementKit {
 				Session session = Session.getDefaultInstance(props,
 						new javax.mail.Authenticator(){
 					protected PasswordAuthentication getPasswordAuthentication(){
-						return new PasswordAuthentication("ardeondia@gmail.com", "Johndoe57");
+						return new PasswordAuthentication("youremail@gmail.com", "pwd");
 					}
 				}
 						);
@@ -154,7 +154,7 @@ public class ForeignLanguageTerritoryManagementKit {
 					
 					                               Message message = new MimeMessage(session);
                                     message.setFrom(new InternetAddress(userEmail, userName + " from " + congregation));
-                                    message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("ardeondia@gmail.com"));
+                                    message.setRecipients(Message.RecipientType.TO, InternetAddress.parse("youremail@gmail.com"));
                                     message.setSubject("New ASP Finder user");
                                     message.setText("We have a brand new user!!!\n" + userName 
                                             + " from " + congregation 

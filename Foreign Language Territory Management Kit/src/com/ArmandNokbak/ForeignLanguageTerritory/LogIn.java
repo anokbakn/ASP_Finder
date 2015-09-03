@@ -263,7 +263,7 @@ public class LogIn extends javax.swing.JFrame {
         Session session = Session.getDefaultInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication("ardeondia@gmail.com", "Johndoe57");
+                        return new PasswordAuthentication("youremail@gmail.com", "pwd");
                     }
                 }
         );
