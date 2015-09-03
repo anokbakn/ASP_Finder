@@ -1767,7 +1767,7 @@ public class Home extends javax.swing.JFrame {
         Session session = Session.getDefaultInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
-                        return new PasswordAuthentication("ardeondia@gmail.com", "Johndoe57");
+                        return new PasswordAuthentication("youremail@gmail.com", "pwd");
                     }
                 }
         );
@@ -1811,7 +1811,7 @@ public class Home extends javax.swing.JFrame {
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         JOptionPane.showMessageDialog(null, "Make a contribution via PayPal"+"\nPlease send the payment to this "
                 + "email on PayPal:\n"
-                + "ardeondia@gmail.com"
+                + "youremail@gmail.com"
                 + "\n\nThank you!", "Make a Contribution", JOptionPane.QUESTION_MESSAGE);
     }//GEN-LAST:event_jMenuItem1ActionPerformed
 
